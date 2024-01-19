@@ -4,9 +4,7 @@
   flex-direction: column;
 }
 .app-body-wrapper{
-  background-color: red;
   flex: 1;
-  background-image:url("./asset/background.webp");
   background-size: cover; 
   background-position: center center;
   object-fit: cover;
