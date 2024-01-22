@@ -15,7 +15,7 @@ const App = () => {
         }}
       >
         <ContentWrapper>
-          <div className="launching-wrapper">Launching Soon develop branch</div>
+          <div className="launching-wrapper">Launching Soon </div>
         </ContentWrapper>
       </div>
       <Footer />
