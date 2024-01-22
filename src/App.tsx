@@ -2,7 +2,7 @@ import "./app.css";
 import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
 import ContentWrapper from "./shared/content-wrapper/ContentWrapper";
-import background from "./asset/background.webp";
+import background from "./asset/background.jpg";
 
 const App = () => {
   return (
