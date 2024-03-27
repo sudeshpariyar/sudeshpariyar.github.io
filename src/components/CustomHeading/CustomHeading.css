@@ -1,0 +1,9 @@
+.heading__white{
+    color: white !important;
+}
+.heading{
+    color: #444444;
+}
+.heading__uppercase{
+    text-transform: uppercase;   
+}

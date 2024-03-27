@@ -1,25 +1,17 @@
 import "./app.css";
-import Footer from "./components/footer/Footer";
-import Header from "./components/header/Header";
-import ContentWrapper from "./shared/content-wrapper/ContentWrapper";
-import background from "./asset/background.jpg";
+import { Route, Routes } from "react-router-dom";
+import Layout from "./Layout/Layout";
+import HomePage from "./pages/HomePage/HomePage";
+import About from "./pages/About/About";
 
 const App = () => {
   return (
-    <div className="app-wrapper">
-      <Header />
-      <div
-        className="app-body-wrapper"
-        style={{
-          backgroundImage: `url(${background})`,
-        }}
-      >
-        <ContentWrapper>
-          <div className="launching-wrapper">Launching Soon!</div>
-        </ContentWrapper>
-      </div>
-      <Footer />
-    </div>
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<HomePage />} />
+        <Route path="/about" element={<About />} />
+      </Route>
+    </Routes>
   );
 };
 

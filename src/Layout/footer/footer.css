@@ -1,0 +1,32 @@
+.footer__wrapper{
+    background-color: var(--primary-color);
+    color: white;
+    padding: 3rem;
+}
+.footer__content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+  
+}
+.footer__left{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.footer__logo{
+    height: 4rem;
+}
+.footer__logo__description{
+    display: flex;
+    flex-direction: column;
+}
+.footer__left__description{
+    margin-top: 1rem;
+    line-height: 1.5rem;
+    font-size: small;
+}
+.footer__contact__info{
+    margin-top: 1rem;
+    line-height: 1.5rem;
+}
