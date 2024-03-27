@@ -1,0 +1,17 @@
+.licence__wrapper{
+    padding-top: 2rem;
+}
+.licence__content{
+    margin-block: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+}
+.licence__logo{
+    height: 8rem;
+}
+.licence__individual{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
