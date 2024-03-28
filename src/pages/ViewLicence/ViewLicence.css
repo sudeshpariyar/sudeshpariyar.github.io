@@ -1,0 +1,22 @@
+.viewLicence{
+    margin-bottom: 2rem;
+}
+.viewLicence__image{
+  width: 100%;
+  object-fit: contain;
+}
+.viewLicence__slider__wrapper{
+  position: relative;
+}
+.viewLIcence__slider{
+  position: absolute;
+  padding: 1rem 2rem;
+  font-size: large;
+}
+.back__button{
+  top: 50%;
+}
+.next__button{
+  top: 50%;
+  right: 0;
+}

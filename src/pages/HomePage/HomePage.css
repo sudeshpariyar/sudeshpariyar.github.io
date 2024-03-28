@@ -3,15 +3,16 @@
 }
 .homePage__image{
     width: 100%;
-    height: 750px;
+    height:45rem;
     object-fit: cover;
 }
 .homePage__image__content{
     position: absolute;
     top: 15%;
+    left: 20%;
     color: white;
     display: flex;
-    justify-content: space-around;
+    gap: 8rem;
 }
 .homePage__image__rightContent{
     /* Glass Effect */

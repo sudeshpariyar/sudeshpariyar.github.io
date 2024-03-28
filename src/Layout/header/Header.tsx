@@ -18,7 +18,9 @@ const Header = () => {
             <CustomButton className="header__button">
               <Link to="/">Home</Link>
             </CustomButton>
-            <CustomButton className="header__button">Recruitments</CustomButton>
+            <CustomButton className="header__button">
+              <Link to="/recruitment">Recruitments</Link>
+            </CustomButton>
             <CustomButton className="header__button">Clients</CustomButton>
             <CustomButton className="header__button">
               <Link to="/about">About</Link>

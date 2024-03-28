@@ -2,6 +2,8 @@ import React from "react";
 import CustomHeading from "../CustomHeading/CustomHeading";
 import "./Licences.css";
 import govLogo from "../../asset/gov_logo_nepal.png";
+import { Link } from "react-router-dom";
+import CustomButton from "../CustomButton/CustomButton";
 
 const Licences = () => {
   return (
@@ -24,7 +26,9 @@ const Licences = () => {
               <CustomHeading headingLevel="h3">
                 Ministry of Labour
               </CustomHeading>
-              <CustomHeading headingLevel="h6">View Licence</CustomHeading>
+              <CustomButton className="licence__view__button">
+                <Link to="/licence">View Licences</Link>
+              </CustomButton>
             </div>
           </div>
         </div>
