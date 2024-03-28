@@ -21,7 +21,8 @@ const Footer = () => {
             </div>
             <div className="footer__left__description">
               Excellent suppliers of skilled and semi-skilled human resources
-              from Nepal to the Middle East, U.A.E and other parts of the world.
+              from Nepal to the Middle East, Malasiya, Europe and other parts of
+              the world.
             </div>
           </div>
           <div className="footer__right">

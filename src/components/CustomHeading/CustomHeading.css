@@ -7,3 +7,10 @@
 .heading__uppercase{
     text-transform: uppercase;   
 }
+.pagetop__heading{
+    position: absolute;
+    top: 0;
+    color: white;
+    top: 25%;
+    left: 20%;
+}

@@ -22,3 +22,8 @@ button{
     background-color: white;
     color: var(--primary-color);
 }
+.licence__view__button{
+    background-color: var(--primary-color);
+    border-radius: 0.5rem;
+    margin-top: 0.5rem;
+}
