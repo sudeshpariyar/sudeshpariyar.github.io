@@ -1,4 +1,14 @@
-.children-wrapper{
+.children__wrapper{
     max-width: 1170px;
     margin-inline: auto;
+}
+
+.pages__wrapper{
+    margin-top: -8rem;
+    z-index: 99 !important;
+    background-color: white;
+    position: relative;
+    padding-inline: 2rem;
+    padding-top: 1rem;
+    border-radius: 0.5rem;
 }

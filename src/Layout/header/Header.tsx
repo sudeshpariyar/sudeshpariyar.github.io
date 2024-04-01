@@ -12,7 +12,7 @@ const Header = () => {
       <ContentWrapper>
         <div className="header__items">
           <CustomHeading headingLevel="h2">
-            <Link to="/">Suharaemployment</Link>
+            <Link to="/">Suhara Employment</Link>
           </CustomHeading>
           <div className="header__navItems">
             <CustomButton className="header__button">
