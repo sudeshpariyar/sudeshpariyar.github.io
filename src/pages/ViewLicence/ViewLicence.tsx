@@ -15,7 +15,7 @@ const ViewLicence = () => {
   return (
     <div className="viewLicence">
       <PageTop pageTitle="View Licences"></PageTop>
-      <ContentWrapper>
+      <ContentWrapper clasName="pages__wrapper">
         <div className="viewLicence__slider__wrapper">
           <CarouselProvider
             naturalSlideWidth={100}

@@ -1,8 +1,14 @@
 import React, { ReactNode } from "react";
 import "./contentWrapper.css";
 
-const ContentWrapper = ({ children }: { children: ReactNode }) => {
-  return <div className="children-wrapper">{children}</div>;
+const ContentWrapper = ({
+  children,
+  clasName,
+}: {
+  children: ReactNode;
+  clasName?: string;
+}) => {
+  return <div className={`children__wrapper ${clasName}`}>{children}</div>;
 };
 
 export default ContentWrapper;

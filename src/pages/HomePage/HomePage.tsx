@@ -35,7 +35,7 @@ const HomePage = () => {
           </div>
         </div>
       </div>
-      <ContentWrapper>
+      <ContentWrapper clasName="pages__wrapper">
         <GuidingPrinciples />
         <Licences />
       </ContentWrapper>

@@ -10,7 +10,7 @@ const Recruitment = () => {
   return (
     <div className="recruitment">
       <PageTop pageTitle="Recruitment"></PageTop>
-      <ContentWrapper>
+      <ContentWrapper clasName="pages__wrapper">
         <div className="recruitment__content">
           <CustomHeading headingLevel="h1">Recruitment Process</CustomHeading>
           <CustomHeading headingLevel="h5">
