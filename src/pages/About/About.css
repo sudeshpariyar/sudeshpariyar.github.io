@@ -1,0 +1,41 @@
+.about__profile__wrapper{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+.about__profile__description,.about__chairman__message,.about__md__message{
+    line-height: 1.5rem;
+    white-space: pre-line;
+    
+}
+.about__profile__image{
+    height: 30rem;
+    object-fit: cover;
+    width: 100%; 
+    border-radius: 0.5rem;
+}
+.about__chairman__wrapper ,.about__md__wrapper{
+    padding-block: 3rem;
+}
+.about__chairman__info,.about__md__info{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+.about__chairman__image ,.about__md__image{
+    height: 30rem;
+    object-fit: cover;
+    width: 100%; 
+    border-radius: 0.5rem;
+}
+.about__categories__wrapper{
+    margin-top: 2rem;
+}
+.about__categories__info{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+}

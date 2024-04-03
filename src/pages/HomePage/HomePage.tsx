@@ -7,8 +7,13 @@ import Ripples from "react-ripples";
 import ContentWrapper from "../../components/content-wrapper/ContentWrapper";
 import GuidingPrinciples from "../../components/GuidingPrinciples/GuidingPrinciples";
 import Licences from "../../components/Licences/Licences";
+import { useNavigate } from "react-router-dom";
 
 const HomePage = () => {
+  const navigate = useNavigate();
+  const handleClick = () => {
+    navigate("/about");
+  };
   return (
     <div className="homePage__wrapper">
       <div className="homePage__image__wrapper">
@@ -28,7 +33,10 @@ const HomePage = () => {
               clients to provide them with best talents from Nepal....
             </span>
             <Ripples placeholder={undefined}>
-              <CustomButton className="homePage__readMore__button">
+              <CustomButton
+                className="homePage__readMore__button"
+                onClick={handleClick}
+              >
                 Read More
               </CustomButton>
             </Ripples>

@@ -1,19 +1,18 @@
 import React from "react";
 import "./header.css";
 import ContentWrapper from "../../components/content-wrapper/ContentWrapper";
-import CustomHeading from "../../components/CustomHeading/CustomHeading";
 import CustomButton from "../../components/CustomButton/CustomButton";
 import { Link } from "react-router-dom";
-// import logo from "../../asset/logo.jpg";
+import logo from "../../asset/full-logo.png";
 
 const Header = () => {
   return (
     <div className="header__wrapper">
       <ContentWrapper>
         <div className="header__items">
-          <CustomHeading headingLevel="h2">
-            <Link to="/">Suhara Employment</Link>
-          </CustomHeading>
+          <Link to="/">
+            <img className="header__logo" src={logo} alt="logo" />
+          </Link>
           <div className="header__navItems">
             <CustomButton className="header__button">
               <Link to="/">Home</Link>

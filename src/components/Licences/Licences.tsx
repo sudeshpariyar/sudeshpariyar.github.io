@@ -1,7 +1,7 @@
 import React from "react";
 import CustomHeading from "../CustomHeading/CustomHeading";
 import "./Licences.css";
-import govLogo from "../../asset/gov_logo_nepal.png";
+import viewLicence from "../../asset/view-licence.webp";
 import { Link } from "react-router-dom";
 import CustomButton from "../CustomButton/CustomButton";
 
@@ -12,14 +12,14 @@ const Licences = () => {
       <div className="licence__content">
         <CustomHeading headingLevel="h4">
           We are authorized by the Government of Nepal to provide Nepali
-          manpower to companies all around the world. Our licenses and
-          certification are as follows.
+          manpower to companies all around the world. View our licenses and
+          certification here.
         </CustomHeading>
         <div className="licence__list">
           <div className="licence__individual">
             <img
               className="licence__logo"
-              src={govLogo}
+              src={viewLicence}
               alt="Nepal Government Logo"
             />
             <div>
