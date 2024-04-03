@@ -7,7 +7,7 @@ import { PrincipleDatas } from "./PrinciplesData";
 const GuidingPrinciples = () => {
   return (
     <div className="principles__wrapper">
-      <CustomHeading headingLevel="h1">Our Guiding Principles</CustomHeading>
+      <CustomHeading headingLevel="h1">Guiding Principles</CustomHeading>
       <div className="principles__grid">
         {PrincipleDatas &&
           PrincipleDatas.map((data) => (

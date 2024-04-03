@@ -1,6 +1,6 @@
 import React from "react";
 import "./footer.css";
-import logo from "../../asset/logo.jpg";
+import logo from "../../asset/full-logo.png";
 import ContentWrapper from "../../components/content-wrapper/ContentWrapper";
 import CustomHeading from "../../components/CustomHeading/CustomHeading";
 
