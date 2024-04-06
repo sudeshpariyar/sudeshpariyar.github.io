@@ -1,35 +1,13 @@
-.about__chairman__wrapper,
-.about__md__wrapper,
-.about__ed__wrapper{
-    padding-block: 3rem;
-}
-/*  */
-.about__profile__info,
-.about__chairman__info,
-.about__md__info,
-.about__ed__info{
-    margin-top: 2rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-}
-.about__profile__description,
-.about__chairman__message,
-.about__md__message,
-.about__ed__message{
-    line-height: 1.5rem;
-    white-space: pre-line; 
-}
-.about__profile__image,
-.about__chairman__image ,
-.about__md__image,
-.about__ed__image{
-    height: 30rem;
-    object-fit: cover;
-    width: 100%; 
-    border-radius: 0.5rem;
-}
+.our__message__wrapper{
+    display: flex;
+    flex-direction: column;
 
+    div:nth-child(2n+1) {
+        div{
+            direction: rtl;
+        }
+    }
+}
 .about__categories__wrapper{
     margin-top: 2rem;
 }

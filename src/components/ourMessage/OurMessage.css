@@ -1,0 +1,17 @@
+.ourMessage__info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-block: 2rem;
+}
+.ourMessage__image{
+    height: 30rem;
+    object-fit: cover;
+    width: 100%; 
+    border-radius: 0.5rem;
+}
+.ourMessage__description{
+    line-height: 1.5rem;
+    white-space: pre-line; 
+    direction: ltr !important;
+}

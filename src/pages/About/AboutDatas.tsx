@@ -1,3 +1,8 @@
+import companyProfileImage from "../../asset/companyProfile.png";
+import chairmanImage from "../../asset/chairman.png";
+import mdImage from "../../asset/managing-director.png";
+import edImage from "../../asset/executive-director.png";
+
 export const companyProfile: string = `Suhara Foreign Employment Agency is a premier executive search, recruitment consultants, HR outsourcing consultancy, manpower consultants, HR consultants, international recruitment agencies, foreign recruitment agencies, gulf recruitment agencies, human resource agency and placement consultants that partner with global clients to provide them with best talents from Nepal. We are a dedicated team of professional consultants offering top of the line executive search and selection services to diverse corporates of all sizes with varied business interests.
 \n We have a track record of recruiting thousands of management professionals, technical and non technical personnel, skilled, semi-skilled and unskilled workers for clients in the Gulf and other Middle Eastern countries. Our professionals specialize in identifying Right People for the Right Job. We work in synergy with the clients to understand manpower requirements and procure best candidates with desired profles. Leveraging on the vast industry experience and network, we are well positioned to meet the all staffng needs within the shortest time frame.    
 `;
@@ -18,12 +23,44 @@ export const executiveDirectorMessage: string = `It feels immense pleasure for m
 \nOn the behalf of Executive Director of this agency, I would like to extend my heartfelt gratitude to all of our clients, candidates and well-wishers. We always welcome you all in our company.
 \nBeing government registered manpower agency in Nepal, we always follow the transparent, proven and legal procedure to recruit Nepalese manpower in overseas companies. You can feel absolutely safe to get recruited through our agency. We have thousands of satisfied clients and candidates. I once again, want to welcome you all. Your satisfaction is our motto.
 \nSumita Bhusal`;
-
 export interface IcategoriesWeProvide {
   id: number;
   category: string;
   specification: string[];
 }
+export interface IOurMessageData {
+  id: number;
+  message: string;
+  imageURL: string;
+  messageTitle: string;
+}
+
+export const ourMessageData: IOurMessageData[] = [
+  {
+    id: 1,
+    message: companyProfile,
+    imageURL: companyProfileImage,
+    messageTitle: "Company Profile",
+  },
+  {
+    id: 2,
+    message: chairmanMessage,
+    imageURL: chairmanImage,
+    messageTitle: "Chairman Message",
+  },
+  {
+    id: 3,
+    message: managingDirectorMessage,
+    imageURL: mdImage,
+    messageTitle: "Managing Director Message",
+  },
+  {
+    id: 4,
+    message: executiveDirectorMessage,
+    imageURL: edImage,
+    messageTitle: "Executive Director Message",
+  },
+];
 
 export const categoriesWeProvide: IcategoriesWeProvide[] = [
   {

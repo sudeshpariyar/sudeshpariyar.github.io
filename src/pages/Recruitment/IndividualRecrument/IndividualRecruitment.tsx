@@ -9,7 +9,7 @@ const IndividualRecruitment = ({ data }: { data: IrecruitmentInfoData }) => {
       <CustomHeading headingLevel="h3">
         {data.id}.{data.title}
       </CustomHeading>
-      <span style={{ lineHeight: "1.3rem" }}>{data.description}</span>
+      <span style={{ lineHeight: "1.5rem" }}>{data.description}</span>
     </CustomCard>
   );
 };
