@@ -2,60 +2,25 @@ import React from "react";
 import PageTop from "../../components/PageTop/PageTop";
 import ContentWrapper from "../../components/content-wrapper/ContentWrapper";
 import CustomHeading from "../../components/CustomHeading/CustomHeading";
-import {
-  chairmanMessage,
-  companyProfile,
-  managingDirectorMessage,
-} from "./AboutDatas";
+import { ourMessageData } from "./AboutDatas";
 import "./About.css";
-import companyProfileImage from "../../asset/companyProfile.png";
-import chairmanImage from "../../asset/chairman.png";
 import { categoriesWeProvide } from "./AboutDatas";
 import IndividualCategories from "../../components/IndividualCategories/IndividualCategories";
-import mdImage from "../../asset/managing-director.png";
+import OurMessage from "../../components/ourMessage/OurMessage";
 const About = () => {
   return (
     <div className="about">
       <PageTop pageTitle="About"></PageTop>
       <ContentWrapper clasName="pages__wrapper">
-        <CustomHeading headingLevel="h1">Company Profile</CustomHeading>
-        <div className="about__profile__wrapper">
-          <img
-            className="about__profile__image"
-            src={companyProfileImage}
-            alt="company profile"
-          />
-          <span className="about__profile__description">{companyProfile}</span>
-        </div>
-        <div className="about__chairman__wrapper">
-          <CustomHeading headingLevel="h1">Chairman Message</CustomHeading>
-          <div className="about__chairman__info">
-            <span className="about__chairman__message">{chairmanMessage}</span>
-            <img
-              className="about__chairman__image"
-              src={chairmanImage}
-              alt="chairman"
-            />
-          </div>
-        </div>
-        <div className="about__md__wrapper">
-          <CustomHeading headingLevel="h1">
-            Managing Director Message
-          </CustomHeading>
-          <div className="about__md__info">
-            <img
-              className="about__md__image"
-              src={mdImage}
-              alt="Managing Director"
-            />
-            <span className="about__md__message">
-              {managingDirectorMessage}
-            </span>
-          </div>
+        <div className="our__message__wrapper">
+          {ourMessageData.length &&
+            ourMessageData.map((message) => (
+              <OurMessage key={message.id} messageData={message} />
+            ))}
         </div>
         <div className="about__categories__wrapper">
-          <CustomHeading headingLevel="h1">
-            Categories We can Provide
+          <CustomHeading headingLevel="h2">
+            Categories we can provide
           </CustomHeading>
           <div className="about__categories__info">
             {categoriesWeProvide.length &&
