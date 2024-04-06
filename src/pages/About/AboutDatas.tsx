@@ -14,6 +14,11 @@ export const managingDirectorMessage: string = `Thanks for giving your valuable 
 \n As one of the reliable international manpower consultants, we can do justice to all your needs in the most professional manner. We are growing day by day to meet our goal and fulfilling your needs.
 \nSubba Syangbo`;
 
+export const executiveDirectorMessage: string = `It feels immense pleasure for me to lead Suhara Foreign Employment Agency, as one of the reliable and dynamic manpower recruitment agencies in Nepal. 
+\nOn the behalf of Executive Director of this agency, I would like to extend my heartfelt gratitude to all of our clients, candidates and well-wishers. We always welcome you all in our company.
+\nBeing government registered manpower agency in Nepal, we always follow the transparent, proven and legal procedure to recruit Nepalese manpower in overseas companies. You can feel absolutely safe to get recruited through our agency. We have thousands of satisfied clients and candidates. I once again, want to welcome you all. Your satisfaction is our motto.
+\nSumita Bhusal`;
+
 export interface IcategoriesWeProvide {
   id: number;
   category: string;
