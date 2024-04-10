@@ -32,3 +32,20 @@
     padding: 1rem;
     border-radius: 0.5rem;
 }
+
+@media only screen and (max-width: 600px) {
+   .homePage__image__rightContent{
+        display: none;
+   }
+   .homePage__image{
+        width: 100%;
+        height:25rem;
+        object-fit: cover; 
+        filter: saturate(2)
+    }
+    .homePage__image__content{
+       top: 30%;
+       left: 5%;
+       color: white; 
+    }
+}
