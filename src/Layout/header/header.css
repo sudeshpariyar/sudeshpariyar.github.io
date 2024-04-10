@@ -21,3 +21,39 @@
     align-items: center;
     gap: 2rem;
 }
+.header__mobile__nav{
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .header__navItems{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+        position: absolute;
+        right: 0;
+        top: 100%;
+        height: 100vh;
+        padding: 1rem 2rem 1rem 1rem;
+        background-color: var(--primary-color);
+    }
+    .header__items{
+       width: 100%;
+    }
+    .header__mobile__nav{
+        display: flex;
+        background-color: transparent;
+        color: white;
+        border: none;
+        font-size: larger;
+    }
+    .header__navItems__none{
+        display: none;
+    }
+    .header__wrapper{
+        position: fixed;
+        z-index: 999;
+        width: 95%;
+    }
+}

@@ -9,8 +9,15 @@
 }
 .pagetop__heading{
     position: absolute;
-    top: 0;
     color: white;
     top: 25%;
     left: 20%;
+}
+@media only screen and (max-width:600px){
+    .pagetop__heading{
+        position: absolute;
+        color: white;
+        top: 25%;
+        left: 5%;
+    }
 }

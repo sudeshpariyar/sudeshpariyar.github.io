@@ -7,7 +7,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
-  
 }
 .footer__left{
     display: flex;
@@ -29,4 +28,12 @@
 .footer__contact__info{
     margin-top: 1rem;
     line-height: 1.5rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .footer__content{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
 }
