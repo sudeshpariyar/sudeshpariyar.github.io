@@ -18,7 +18,7 @@ const OurMessage = ({ messageData }: { messageData: IOurMessageData }) => {
         <div className="ourMessage__description">
           {messageData.message}
           <br />
-          <strong>-{messageData.messageFrom}</strong>
+          <strong>{messageData.messageFrom}</strong>
         </div>
       </div>
     </div>
