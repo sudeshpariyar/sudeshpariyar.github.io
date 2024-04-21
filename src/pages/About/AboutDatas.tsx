@@ -10,19 +10,16 @@ export const companyProfile: string = `Suhara Foreign Employment Agency is a pre
 export const chairmanMessage: string = `It is indeed my pleasure to take you towards a virtual tour of Suhara Foreign Employment Agency, which is one amongst the leaders in the recruitment Industry. 
  \n The world we live in is continuously transforming and competitive in human resource. Today’s challenge is to provide well-trained, potential and skillful manpower to the clients. One-time service is not sufficient to the clients but also providing continuous service after deployment is our objective to meet the Clients expectation. 
  \nI would like to bring it to our valued clients notice that the uhara Foreign Employment Agency with its competent staff member stands for quality service in order to meet required demand of the clients. 
- \nI always consider the fact that the human potentiality should be utilized to the maximum extent for the betterment of the world, hence our priority is always to bridge up the opportunities and the human resource. In short, we undertake responsibility to provide the right workers for the right job. I look forward to working with your esteemed organization in the days to come for mutual benefit. 
- \nSubash Pariyar`;
+ \nI always consider the fact that the human potentiality should be utilized to the maximum extent for the betterment of the world, hence our priority is always to bridge up the opportunities and the human resource. In short, we undertake responsibility to provide the right workers for the right job. I look forward to working with your esteemed organization in the days to come for mutual benefit.`;
 
 export const managingDirectorMessage: string = `Thanks for giving your valuable time to look our profile. Employees are by far the most valued asset of our organization. When you’re in need of specialized, quick and affordable manpower services across the world, Suhara Foreign Employment Agency  is the name you can always trust for quality manpower recruitment. 
 \nOur professional services will help you devise strategic plan, with a superb client based service to help your goal. We are one of the top listed manpower agency serving all types of industries. We are a leader in international recruitment services, multinational manpower consultancy services and career placements. 
 \nAs a leading manpower consultant, we thrive to do our best, and can guarantee that you will leave satisfied with our services. We have served top companies in the middle-east and our recruiter’s team is on standby to serve you with innovative top talents solutions and quickly.
-\n As one of the reliable international manpower consultants, we can do justice to all your needs in the most professional manner. We are growing day by day to meet our goal and fulfilling your needs.
-\nSubba Syangbo`;
+\n As one of the reliable international manpower consultants, we can do justice to all your needs in the most professional manner. We are growing day by day to meet our goal and fulfilling your needs.`;
 
 export const executiveDirectorMessage: string = `It feels immense pleasure for me to lead Suhara Foreign Employment Agency, as one of the reliable and dynamic manpower recruitment agencies in Nepal. 
 \nOn the behalf of Executive Director of this agency, I would like to extend my heartfelt gratitude to all of our clients, candidates and well-wishers. We always welcome you all in our company.
-\nBeing government registered manpower agency in Nepal, we always follow the transparent, proven and legal procedure to recruit Nepalese manpower in overseas companies. You can feel absolutely safe to get recruited through our agency. We have thousands of satisfied clients and candidates. I once again, want to welcome you all. Your satisfaction is our motto.
-\nSumita Bhusal`;
+\nBeing government registered manpower agency in Nepal, we always follow the transparent, proven and legal procedure to recruit Nepalese manpower in overseas companies. You can feel absolutely safe to get recruited through our agency. We have thousands of satisfied clients and candidates. I once again, want to welcome you all. Your satisfaction is our motto.`;
 export interface IcategoriesWeProvide {
   id: number;
   category: string;
@@ -33,6 +30,7 @@ export interface IOurMessageData {
   message: string;
   imageURL: string;
   messageTitle: string;
+  messageFrom?: string;
 }
 
 export const ourMessageData: IOurMessageData[] = [
@@ -47,18 +45,21 @@ export const ourMessageData: IOurMessageData[] = [
     message: chairmanMessage,
     imageURL: chairmanImage,
     messageTitle: "Chairman Message",
+    messageFrom: "Subash Pariyar",
   },
   {
     id: 3,
     message: managingDirectorMessage,
     imageURL: mdImage,
     messageTitle: "Managing Director Message",
+    messageFrom: "Subba Syangbo",
   },
   {
     id: 4,
     message: executiveDirectorMessage,
     imageURL: edImage,
     messageTitle: "Executive Director Message",
+    messageFrom: "Sumita Bhusal",
   },
 ];
 

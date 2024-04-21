@@ -15,7 +15,11 @@ const OurMessage = ({ messageData }: { messageData: IOurMessageData }) => {
           src={messageData.imageURL}
           alt={messageData.messageTitle}
         />
-        <div className="ourMessage__description">{messageData.message}</div>
+        <div className="ourMessage__description">
+          {messageData.message}
+          <br />
+          <strong>-{messageData.messageFrom}</strong>
+        </div>
       </div>
     </div>
   );

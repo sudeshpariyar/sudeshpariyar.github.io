@@ -45,14 +45,19 @@ const Header = () => {
             >
               Recruitments
             </CustomButton>
-            <CustomButton className="header__button">Clients</CustomButton>
+            {/* <CustomButton className="header__button">Clients</CustomButton> */}
+            <CustomButton
+              className="header__button"
+              onClick={() => handleLinkClicked("/contact")}
+            >
+              Contacts
+            </CustomButton>
             <CustomButton
               className="header__button"
               onClick={() => handleLinkClicked("/about")}
             >
               About
             </CustomButton>
-            <CustomButton className="header__button">Contacts</CustomButton>
           </div>
           <CustomButton onClick={handleNav} className="header__mobile__nav">
             {mobileNavClicked ? <IoCloseSharp /> : <GiHamburgerMenu />}
