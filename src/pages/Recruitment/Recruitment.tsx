@@ -12,7 +12,7 @@ const Recruitment = () => {
       <PageTop pageTitle="Recruitment"></PageTop>
       <ContentWrapper clasName="pages__wrapper">
         <CustomHeading headingLevel="h1">Recruitment Process</CustomHeading>
-        <CustomHeading headingLevel="h5">
+        <CustomHeading headingLevel="h4">
           We take following steps to ensure you get right person for the job.
         </CustomHeading>
         <div className="recruitment__process">
