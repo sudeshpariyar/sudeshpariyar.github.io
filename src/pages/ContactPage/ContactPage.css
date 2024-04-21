@@ -35,6 +35,10 @@
 .contact__form__map{
     margin-top: 2rem;
 }
+.contact__loader{
+    margin-inline: auto;
+    margin-top: 2rem;
+}
 @media only screen and (max-width:600px){
     .contact__page__wrapper{
         display: flex;
