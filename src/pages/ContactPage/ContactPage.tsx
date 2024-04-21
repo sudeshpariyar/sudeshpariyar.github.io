@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import PageTop from "../../components/PageTop/PageTop";
 import ContentWrapper from "../../components/content-wrapper/ContentWrapper";
 import "./ContactPage.css";
@@ -7,11 +7,14 @@ import CustomButton from "../../components/CustomButton/CustomButton";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import ContactUs from "../../asset/contactus.jpg";
+import { Watch } from "react-loader-spinner";
 
 const ContactPage = () => {
   const form = useRef<HTMLFormElement>(null);
+  const [sendingEmail, setSendingEmail] = useState(false);
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    setSendingEmail(true);
     if (form.current) {
       emailjs
         .sendForm(
@@ -25,6 +28,7 @@ const ContactPage = () => {
         .then(
           () => {
             toast("Message Sent!");
+            setSendingEmail(false);
             form.current?.reset();
           },
           (error) => {
@@ -54,39 +58,58 @@ const ContactPage = () => {
             </div>
           </div>
           <div className="contact__info">
-            <form className="contact__form" ref={form} onSubmit={handleSubmit}>
-              <label className="contact__form__label">Name</label>
-              <input
-                className="contact__input__field"
-                type="text"
-                name="name"
-                required
-              />
-              <label className="contact__form__label">Email</label>
-              <input
-                className="contact__input__field"
-                type="email"
-                name="email"
-                required
-              />
-              <label className="contact__form__label">Phone</label>
-              <input
-                className="contact__input__field"
-                type="text"
-                name="phone"
-                required
-              />
+            {sendingEmail ? (
+              <div className="contact__loader">
+                <Watch
+                  visible={true}
+                  height="80"
+                  width="80"
+                  radius="48"
+                  color="#12377E"
+                  ariaLabel="watch-loading"
+                  wrapperStyle={{}}
+                  wrapperClass=""
+                />
+              </div>
+            ) : (
+              <form
+                className="contact__form"
+                ref={form}
+                onSubmit={handleSubmit}
+              >
+                <label className="contact__form__label">Name</label>
+                <input
+                  className="contact__input__field"
+                  type="text"
+                  name="name"
+                  required
+                />
+                <label className="contact__form__label">Email</label>
+                <input
+                  className="contact__input__field"
+                  type="email"
+                  name="email"
+                  required
+                />
+                <label className="contact__form__label">Phone</label>
+                <input
+                  className="contact__input__field"
+                  type="text"
+                  name="phone"
+                  required
+                />
 
-              <label className="contact__form__label">Message</label>
-              <textarea
-                className="contact__input__field"
-                name="message"
-                required
-              />
-              <CustomButton className="send__email__button" typeof="submit">
-                Submit
-              </CustomButton>
-            </form>
+                <label className="contact__form__label">Message</label>
+                <textarea
+                  className="contact__input__field"
+                  name="message"
+                  required
+                />
+                <CustomButton className="send__email__button" typeof="submit">
+                  Submit
+                </CustomButton>
+              </form>
+            )}
           </div>
         </div>
         <div className="contact__form__map">
