@@ -10,7 +10,7 @@
 .homePage__image__content{
     position: absolute;
     top: 15%;
-    left: 20%;
+    left: 19%;
     color: white;
     display: flex;
     gap: 8rem;
@@ -44,8 +44,9 @@
         filter: saturate(2)
     }
     .homePage__image__content{
-       top: 30%;
+       top: 25%;
        left: 5%;
        color: white; 
+       font-size: small;
     }
 }
