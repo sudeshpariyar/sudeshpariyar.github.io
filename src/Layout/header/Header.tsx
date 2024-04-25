@@ -16,6 +16,7 @@ const Header = () => {
     setMobileNavClicked(!mobileNavClicked);
   };
   const handleLinkClicked = (link: string) => {
+    setMobileNavClicked(false);
     navigate(`${link}`);
   };
   return (
@@ -38,6 +39,12 @@ const Header = () => {
               onClick={() => handleLinkClicked("/")}
             >
               Home
+            </CustomButton>{" "}
+            <CustomButton
+              className="header__button"
+              onClick={() => handleLinkClicked("/about")}
+            >
+              About
             </CustomButton>
             <CustomButton
               className="header__button"
@@ -46,12 +53,6 @@ const Header = () => {
               Recruitments
             </CustomButton>
             {/* <CustomButton className="header__button">Clients</CustomButton> */}{" "}
-            <CustomButton
-              className="header__button"
-              onClick={() => handleLinkClicked("/about")}
-            >
-              About
-            </CustomButton>
             <CustomButton
               className="header__button"
               onClick={() => handleLinkClicked("/contact")}
