@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.eb05c4f5.css",
+    "main.js": "/static/js/main.c4b22296.js",
+    "static/js/787.035db26a.chunk.js": "/static/js/787.035db26a.chunk.js",
+    "static/media/ejajatPatra.jpg": "/static/media/ejajatPatra.095c1cf07c6c9ee8a80e.jpg",
+    "static/media/panTranslate.jpg": "/static/media/panTranslate.967a985721a410e36e74.jpg",
+    "static/media/registerEnglish.jpg": "/static/media/registerEnglish.10c855da823a5733774d.jpg",
+    "static/media/licenceTranslate2.jpg": "/static/media/licenceTranslate2.fe04b0a6c6280d7c5f47.jpg",
+    "static/media/licenceTranslate1.jpg": "/static/media/licenceTranslate1.edef43da1b4e5f7e7893.jpg",
+    "static/media/panDarta.jpg": "/static/media/panDarta.1f377cfa20197434eda1.jpg",
+    "static/media/registerNepali.jpg": "/static/media/registerNepali.dcfcd169eeaf7767d267.jpg",
+    "static/media/test.jpg": "/static/media/test.d4be1e2f6440df10a6dd.jpg",
+    "static/media/companyProfile.png": "/static/media/companyProfile.50478ab9b7996e791061.png",
+    "static/media/chairman.png": "/static/media/chairman.9f0ee4d691f6178c6cc0.png",
+    "static/media/contactus.jpg": "/static/media/contactus.06f0eb24f443ad0d674d.jpg",
+    "static/media/executive-director.png": "/static/media/executive-director.575be4e9de7a91b4901c.png",
+    "static/media/aeroplane1.jpg": "/static/media/aeroplane1.2251e82504160b095788.jpg",
+    "static/media/managing-director.png": "/static/media/managing-director.462fcb393a26fe79a29b.png",
+    "static/media/full-logo.png": "/static/media/full-logo.c953b3594106c40f7314.png",
+    "static/media/view-licence.webp": "/static/media/view-licence.ff728b6b3450c41ffd35.webp",
+    "index.html": "/index.html",
+    "main.eb05c4f5.css.map": "/static/css/main.eb05c4f5.css.map",
+    "main.c4b22296.js.map": "/static/js/main.c4b22296.js.map",
+    "787.035db26a.chunk.js.map": "/static/js/787.035db26a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.eb05c4f5.css",
+    "static/js/main.c4b22296.js"
+  ]
+}
