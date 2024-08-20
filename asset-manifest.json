@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/suharaemployment/static/css/main.f56def6b.css",
-    "main.js": "/suharaemployment/static/js/main.f7a0c54f.js",
+    "main.js": "/suharaemployment/static/js/main.42ca4f09.js",
     "static/js/787.035db26a.chunk.js": "/suharaemployment/static/js/787.035db26a.chunk.js",
     "static/media/ejajatPatra.jpg": "/suharaemployment/static/media/ejajatPatra.095c1cf07c6c9ee8a80e.jpg",
     "static/media/panTranslate.jpg": "/suharaemployment/static/media/panTranslate.967a985721a410e36e74.jpg",
@@ -21,11 +21,11 @@
     "static/media/view-licence.webp": "/suharaemployment/static/media/view-licence.ff728b6b3450c41ffd35.webp",
     "index.html": "/suharaemployment/index.html",
     "main.f56def6b.css.map": "/suharaemployment/static/css/main.f56def6b.css.map",
-    "main.f7a0c54f.js.map": "/suharaemployment/static/js/main.f7a0c54f.js.map",
+    "main.42ca4f09.js.map": "/suharaemployment/static/js/main.42ca4f09.js.map",
     "787.035db26a.chunk.js.map": "/suharaemployment/static/js/787.035db26a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f56def6b.css",
-    "static/js/main.f7a0c54f.js"
+    "static/js/main.42ca4f09.js"
   ]
 }
