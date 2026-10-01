@@ -1,35 +1,27 @@
-import React from "react";
-import PageTop from "../../components/PageTop/PageTop";
-import "./ViewLicence.css";
+import { ButtonBack, ButtonNext, CarouselProvider, Slide, Slider } from "pure-react-carousel";
 import ContentWrapper from "../../components/content-wrapper/ContentWrapper";
-import {
-  CarouselProvider,
-  Slider,
-  Slide,
-  ButtonBack,
-  ButtonNext,
-} from "pure-react-carousel";
-import "pure-react-carousel/dist/react-carousel.es.css";
-import { ViewLicenceData } from "./ViewLicenceData";
-const ViewLicence = () => {
-  return (
-    <div className="viewLicence">
-      <PageTop pageTitle="View Licences"></PageTop>
+import PageTop from "../../components/PageTop/PageTop";
+import { ViewNoticeData } from "./ViewNoticeData";
+
+const Notices = ()=>{
+return (
+    <div className="notices">
+      <PageTop pageTitle="Notices"></PageTop>
       <ContentWrapper clasName="pages__wrapper">
-        <div className="viewLicence__slider__wrapper">
+        <div className="viewNotive__slider__wrapper">
           <CarouselProvider
             naturalSlideWidth={100}
             naturalSlideHeight={140}
-            totalSlides={ViewLicenceData.length}
+            totalSlides={ViewNoticeData.length}
           >
             <Slider>
-              {ViewLicenceData.length &&
-                ViewLicenceData.map((data) => (
+              {ViewNoticeData.length &&
+                ViewNoticeData.map((data) => (
                   <Slide index={data.id} key={data.id}>
                     <img
-                      className="viewLicence__image"
+                      className="viewNotice__image"
                       src={data.imageURL}
-                      alt="licence1"
+                      alt="notice1"
                     />
                   </Slide>
                 ))}
@@ -45,7 +37,6 @@ const ViewLicence = () => {
         </div>
       </ContentWrapper>
     </div>
-  );
-};
-
-export default ViewLicence;
+)
+}
+export default Notices;
