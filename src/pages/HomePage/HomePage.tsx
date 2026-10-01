@@ -1,7 +1,7 @@
 import React from "react";
 import "./HomePage.css";
 import CustomHeading from "../../components/CustomHeading/CustomHeading";
-import homepageImage from "../../asset/aeroplane1.jpg";
+import homepageImage from "../../asset/homepage.jpg";
 import CustomButton from "../../components/CustomButton/CustomButton";
 import Ripples from "react-ripples";
 import ContentWrapper from "../../components/content-wrapper/ContentWrapper";
