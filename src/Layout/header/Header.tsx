@@ -52,7 +52,12 @@ const Header = () => {
             >
               Recruitments
             </CustomButton>
-            {/* <CustomButton className="header__button">Clients</CustomButton> */}{" "}
+              <CustomButton
+              className="header__button"
+              onClick={() => handleLinkClicked("/notices")}
+            >
+              Notices
+            </CustomButton>
             <CustomButton
               className="header__button"
               onClick={() => handleLinkClicked("/contact")}

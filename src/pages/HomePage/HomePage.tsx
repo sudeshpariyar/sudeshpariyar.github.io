@@ -20,7 +20,7 @@ const HomePage = () => {
         <img className="homePage__image" src={homepageImage} alt="homePage" />
         <div className="homePage__image__content">
           <CustomHeading headingLevel="h1" className="heading__white">
-            Creating Opportunities, Empowering Dreams: Your Trusted Partner in
+            Empowering Dreams,
           </CustomHeading>
 
           <div className="homePage__image__rightContent">
